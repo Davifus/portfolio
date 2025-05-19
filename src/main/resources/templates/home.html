@@ -6,9 +6,35 @@
     <link rel="stylesheet" th:href="@{/css/styles.css}" />
 </head>
 <body>
-    <h1 th:text="'Welcome, ' + ${name} + '!'">Welcome</h1>
+    <h1 th:text="${name}">Welcome</h1>
+    <h3 th:text="'Full-Stack Engineer | Machine Learning | Data Analyst'">My Description</h3>
+    
+    <!-- [Home] [About] [Projects] [Resume] [Contact] -->
 
+    <h1 th:text="'About Me'"></h1>
+    <!-- Background and education
+    Career goals
+    Fun facts or interests (e.g., game dev, hackathons, writing open-source tools)
+    Tools/languages you’re confident in -->
+    
+    <h1 th:text="'Project'"></h1>
+    <!-- This is the heart of your portfolio — showcase your work.
+    Each project should have:
+    Name + short description
+    Tech stack used
+    Screenshot or demo GIF
+    GitHub link (and/or live link if hosted)
+    What you contributed (if team-based)
+    Challenges or things you learned
+    Tip: Have 3–6 quality projects (better than 10 average ones) -->
+    
+    <h1 th:text="'Experience'"></h1>
+    <!-- put noteable school classes instead cause no prof experience yet -->
+    <h1 th:text="'Contact'"></h1>
+    <!-- email,linkedin/github/etc  -->
     <!-- Link JS -->
     <script th:src="@{/js/scripts.js}"></script>
 </body>
 </html>
+
+<!-- I want keep everything in one page but have button that will jump to it -->
